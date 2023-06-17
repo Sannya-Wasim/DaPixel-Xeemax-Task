@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DaPixel Landing Page</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+      <!-- Flex Container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="pt-2">
+          <img src="img/Logo-B6.png" alt="" />
+          <!-- <p>DAPIXEL</p> -->
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="hover:text-darkGrayishBlue font-bold">Services</a>
+          <a href="#" class="hover:text-darkGrayishBlue font-bold"
+            >Industries</a
+          >
+          <a href="#" class="hover:text-darkGrayishBlue font-bold">About Us</a>
+          <a href="#" class="hover:text-darkGrayishBlue font-bold"
+            >Team DaPixel</a
+          >
+        </div>
+        <!-- Button -->
+        <a
+          href="#"
+          class="hidden md:block p-3 px-6 pt-2 text-white rounded-full baseline hover: bg-orangishYellow"
+          >Get Started</a
+        >
+
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Services</a>
+          <a href="#">Industries</a>
+          <a href="#">About Us</a>
+          <a href="#">Team DaPixel</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- flex-container -->
+      <div
+        class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0"
+      >
+        <!-- Left Item -->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+          >
+            We help you grow your <span class="text-orangishYellow">conversions.</span>
+          </h1>
+          <p class="max-w-sm text-center md:text-left">
+            Featured in leading publications around the world
+          </p>
+          <img src="./img/sponsors.png"/>
+          <div class="flex-justify-center md:justify-start">
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 text-white bg-orangishYellow rounded-full baseline hover:bg-brightRedLight"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+        <!-- Image Section -->
+        <div class="md:w-1/2">
+          <img class="h-100" src="img/Group.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <!-- Container to testimonial blocks -->
+      <div class="max-w-6xl px-5 mx-auto m-64 text-center">
+        <!-- Testimonials container -->
+        <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+          <!-- Testimonial 01 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray shadow-lg md:w-1/3"
+          >
+            <img class="w-16" src="./img/avatar.png" alt="" />
+            <h5 class="text-lg font-bold">Tim Haldorsson</h5>
+            <p class="text-sm text-darkGrayishBlue">Paid Search Manager</p>
+            <a class="text-purple-600"
+              >Gothenburg, Sweden<br />
+              tim@lunarstrategy.com</a
+            >
+            <!-- Button -->
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 text-white bg-orangishYellow rounded-full baseline hover:bg-brightRedLight"
+              >Book a free meeting</a
+            >
+          </div>
+
+          <!-- Testimonial 02 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray shadow-lg md:w-1/3"
+          >
+            <img class="w-16" src="./img/avatar.png" alt="" />
+            <h5 class="text-lg font-bold">Tim Haldorsson</h5>
+            <p class="text-sm text-darkGrayishBlue">Paid Search Manager</p>
+            <a class="text-purple-600"
+              >Gothenburg, Sweden<br />
+              tim@lunarstrategy.com</a
+            >
+            <!-- Button -->
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 text-white bg-orangishYellow rounded-full baseline hover:bg-brightRedLight"
+              >Book a free meeting</a
+            >
+          </div>
+
+          <!-- Testimonial 03 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray shadow-lg md:w-1/3"
+          >
+            <img class="w-16" src="./img/avatar.png" alt="" />
+            <h5 class="text-lg font-bold">Tim Haldorsson</h5>
+            <p class="text-sm text-darkGrayishBlue">Paid Search Manager</p>
+            <a class="text-purple-600"
+              >Gothenburg, Sweden<br />
+              tim@lunarstrategy.com</a
+            >
+            <!-- Button -->
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 text-white bg-orangishYellow rounded-full baseline hover:bg-brightRedLight"
+              >Book a free meeting</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
